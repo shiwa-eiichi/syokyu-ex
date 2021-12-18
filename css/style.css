@@ -1,0 +1,11 @@
+@charset "UTF-8";
+.page-header {
+  font-size: larger;
+}
+.sample-box {
+  position: relative;
+}
+.main-comment1 {
+  display: flex;
+  justify-content: center;
+}
