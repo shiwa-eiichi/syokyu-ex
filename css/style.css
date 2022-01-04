@@ -1,36 +1,330 @@
-@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
 
-/* 共通部分 */
 body {
-  font-family: 'Noto Sans JP', sans-serif;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.4;
+  color: #444;
 }
 
-
-
-
-
-.page-header {
-  font-size: larger;
+a {
+  text-decoration: none;
 }
-.sample-box {
-  position: relative;
+
+.main-color {
+  color: rgb(33, 169, 55);
 }
-.main-comment1 {
+.telephone-number {
+  color: rgb(33, 169, 55);
+}
+.image-color {
+  color: rgb(33, 169, 55);
+}
+.header-logo {
+  width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+header {
+  height:  130px;
+}
+
+.header-wrapper {
+  height: 130px;
+  max-width: 1180px;
+  margin: 0 auto;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  width: 80%;
 }
 
-
-
-/* カード */
-.card-a {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	padding: 10px;
+.header-info {
+  float: right;
+  font-size: 1.4rem;
+  margin-bottom: 7px;
+  line-height: 2rem;
 }
+.telephone {
+  float: right;
+}
+.telephone-number {
+  float: right;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+  text-align: right;
+}
+
+.fv {
+  background: url(/images/fv.png);
+  height: 947px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.fv-wrapper {
+  width: 79%;
+  margin: 0 auto;
+  padding: 133px 0px;
+}
+
+.fv-title {
+  writing-mode: vertical-lr;
+}
+
+.fv-title-comment {
+  display: block;
+  background-color: #fff;
+  font-size: 2.8rem;
+  line-height: 3.4rem;
+  padding: 18px 35px 65px;
+  margin-right: 80px;
+}
+
+.concept {
+  margin: 162px 0 82px;
+}
+
+.concept-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  width: 80%;
+}
+
+.concept-message {
+  margin: 31px 49px 31px 31px;
+}
+
+.concept-title {
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+}
+
+.concept-message-body {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+}
+
+.underline-main {
+  /* ---下線の指定--- */
+  /* https://developer.mozilla.org/ja/docs/Web/CSS/gradient/linear-gradient() */
+  background: linear-gradient(transparent 70%, #99e5a5 70%);
+  padding-right: 8px;
+}
+
+.concept-image {
+  border-radius: 10px;
+}
+
+.Treatment {
+  background-color: #f5fcf8;
+  padding-top: 78px;
+}
+
+.Treatment-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 79px;
+}
+
+.Treatment-text {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.Treatment-wrapper {
+  max-width: 1180px;
+  margin: 34px auto 0;
+  display: flex;
+  gap: 20px;
+  width: 80%;
+}
+
 .card {
-	width: 30%;
-	height: 300px;
-	background-color: rgb(175, 172, 172);
+  position: relative;
+  width: calc((100% - 40px) / 3);
+  padding: 47px 28px 257px;
+  background-color: #fff;
+  border: 2px solid #c9c9c9;
+  border-radius: 10px;
 }
+
+.card-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.card-body {
+  font-size: 1.6rem;
+  line-height: 3.8rem;
+  font-weight: bold;
+}
+.card-image {
+  width: 187px;
+  position: absolute;
+  margin: auto;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+
+.info {
+  padding: 88px 0 112px;
+  background-color: #f5fcf8;
+}
+
+.info-title {
+  font-size: 2.4rem;
+  line-height: 3.8rem;
+  text-align: center;
+  margin-bottom: 74px;
+}
+
+.info-wrapper {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 49px 66px;
+  text-align: right;
+  background-color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 3px 6px rgb(0 0 0 / 16%);
+  width: 80%;
+}
+
+.info-row {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 2px solid #e7e7e7;
+}
+
+.info-data-title {
+  display: flex;
+  gap: 36px;
+}
+
+.info-date {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+}
+
+.info-tag {
+  width: 80px;
+  background: #444;
+  color: #fff;
+  font-size: 1.2rem;
+  line-height: 2.5rem;
+  text-align: center;
+}
+
+.info-detail {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  font-weight: bold;
+  text-align: left;
+}
+
+.info-button {
+  position: relative;
+  display: inline-block;
+  margin-top: 40px;
+  color: #444;
+  font-weight: bold;
+}
+
+.info-button:before {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: solid 7px transparent;
+  border-bottom: solid 7px transparent;
+  border-left: solid 10px #444444;
+  position: absolute;
+  top: 0;
+  right: -18px;
+  bottom: 0;
+  margin: auto;
+}
+
+/* footer */
+footer {
+  margin: 196px 0 163px;
+}
+
+.footer-wrapper {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1180px;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.footer-info {
+  flex-basis: calc(48% - 34px);
+}
+
+.footer-logo {
+  width: 263px;
+}
+
+.footer-address {
+  margin: 30px 0;
+}
+
+.footer-address span {
+  margin-left: 16px;
+}
+
+.footer-contact {
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.footer-consultation {
+  border-top: 2px solid #e7e7e7;
+  border-bottom: 2px solid #e7e7e7;
+  padding: 23px 0 23px;
+  margin-bottom: 27px;
+}
+
+.footer-consultation-wrapper {
+  margin-bottom: 20px;
+}
+
+.footer-consultation-row {
+  display: flex;
+  gap: 23px;
+  align-items: center;
+}
+
+.footer-consultation-row dt {
+  border-right: 2px solid #e7e7e7;
+  width: 84px;
+  height: 40px;
+  font-size: 1.4rem;
+  line-height: 3.8rem;
+}
+
+.copyright {
+  display: block;
+  font-size: 11px;
+  text-align: right;
+  line-height: 3.8rem;
+}
+
