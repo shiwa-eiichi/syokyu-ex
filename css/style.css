@@ -22,11 +22,10 @@ a {
 .image-color {
   color: rgb(33, 169, 55);
 }
-.header-logo {
-  width: 100%;
-    height: auto;
-    vertical-align: bottom;
-}
+/* .header-logo {
+  height: auto;
+  vertical-align: bottom;
+} */
 
 header {
   height:  130px;
@@ -44,16 +43,12 @@ header {
 }
 
 .header-info {
-  float: right;
   font-size: 1.4rem;
   margin-bottom: 7px;
   line-height: 2rem;
 }
-.telephone {
-  float: right;
-}
+
 .telephone-number {
-  float: right;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 1;
